@@ -1,0 +1,41 @@
+.search-filter-style{
+  width: 100%;
+  border-radius: 10px;
+  font-size: 10px;
+  padding: 15px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border: solid 2px #f48982;
+}
+
+.search-filter-style:active, .search-filter-style:hover{
+  outline: none;
+}
+
+.recipe-list-container-style{
+  background-color: #f9f5f0;
+  opacity: 80%;
+}
+
+.border-bottom-line{
+  margin: 0 10px 0 10px;
+  border-bottom: solid 1px rgba(97,85,81,0.3);
+}
+
+.add-recipe-button-style, .save-recipes-btn-style{
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  color: rgb(97,85,81);
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.border-right{
+  cursor: none;
+  line-height: 10px;
+  color: rgb(97,85,81);
+}

@@ -1,0 +1,41 @@
+.h2-heading-style{
+  font-size: 20px;
+  font-weight: 500;
+  color: #f38e82;
+  text-transform: uppercase;
+  margin: 5px 0 5px 0;
+  text-align: center;
+}
+
+.margin-10{
+  margin-top: 10px;
+}
+
+.ingredient-list-element-style{
+  background-color: #f2efee;
+  border: solid 1px #e2dfde;
+  border-radius: 10px;
+}
+
+.ingredient-list-style{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  list-style: none;
+}
+
+.ingredient-list-element-style:hover{
+  color: #918581;
+  font-weight: bold;
+}
+
+.save-to-pdf-style{
+  text-decoration: none;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #807471;
+}

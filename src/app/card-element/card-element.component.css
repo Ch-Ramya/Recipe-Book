@@ -1,0 +1,54 @@
+.card-container-style{
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  outline: none;
+  text-decoration: none;
+}
+
+.display-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.square{
+  height: 350px;
+  width: 100%;
+  align-items: center;
+}
+
+.card-container-style:hover{
+  background-color: #e8e8e6;
+}
+
+.active{
+  background-color: #e8e8e6;
+}
+
+.title-style{
+  text-transform: uppercase;
+  color: rgb(243, 142, 130);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.publisher-style{
+  font-size: 12px;
+  color: rgb(97,85,81);
+}
+
+.description-style{
+  font-size: 12px;
+  color: rgb(97,85,81);
+  width: 100%;
+}

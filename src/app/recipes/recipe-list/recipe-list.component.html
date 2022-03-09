@@ -1,0 +1,16 @@
+<div class="row" style="margin:10px 0 10px 0">
+  <div class="col-md-7">
+    <input type="text" placeholder="Search Recipe By Name, Description, Tag etc..." id="searchFilter" class="search-filter-style" [(ngModel)]="searchValue"/>
+  </div>
+  <div class="col-md-5" style="display: flex;padding: 0;margin: 0;align-items: center;justify-content: flex-end">
+    <a (click)="onNewRecipe()" class="add-recipe-button-style"> + New Recipe </a>
+    <a class="border-right">|</a>
+    <a class="save-recipes-btn-style" (click)="onSaveData()">Save Recipes</a>
+  </div>
+</div>
+<div class="row recipe-list-container-style">
+  <div class="col-xs-12">
+    <app-recipe-item *ngFor="let recipeEle of recipes|searchFilter: searchValue;let i=index" [index]="i" [recipe]="recipeEle"></app-recipe-item>
+  </div>
+</div>
+

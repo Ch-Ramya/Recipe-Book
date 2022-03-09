@@ -1,0 +1,10 @@
+.container-style{
+  background-color: #f9f5f3;
+  opacity: 80%;
+  box-shadow: rgba(97, 85, 81, 0.2) 0px 18px 54px 5px;
+  border-radius: 10px;
+}
+
+.margin-top-50{
+  margin-top: 100px;
+}

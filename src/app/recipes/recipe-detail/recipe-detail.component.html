@@ -1,0 +1,61 @@
+<div class="row recipe-detail-container-style">
+  <div class="col-xs-12" style="position: relative">
+    <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive recipe-detail-image-style">
+    <h1 class="recipe-title"><span>{{recipe.name}}</span></h1>
+  </div>
+</div>
+
+<div class="row  margin-30">
+  <div class="col-md-5">
+    <span class="recipe-general-info-style">{{recipe.timeTaken}}</span>
+    <span class="recipe-general-info-style">{{recipe.servings}} Servings</span>
+  </div>
+  <div class="col-md-7" style="display: flex;justify-content: flex-end">
+    <a class="recipe-control-links" (click)="openNutritionModal()">Nutrition</a>
+    <a class="border-right">|</a>
+    <a class="recipe-control-links" (click)="onBookmarkRecipe()">{{recipe.bookMark ? "Bookmarked" : "Bookmark"}}</a>
+    <a class="border-right">|</a>
+    <a class="recipe-control-links" (click)="onEditRecipe()">Edit</a>
+    <a class="border-right">|</a>
+    <a class="recipe-control-links" (click)="onDeleteRecipe()">Delete</a>
+  </div>
+</div>
+
+<!--<div class="row">
+  <div class="col-md-12">
+    <app-nutrition-report [nutrientInfo]="recipe.nutrients"></app-nutrition-report>
+  </div>
+</div>-->
+
+<div class="row recipe-author-box dark-background">
+  <div class="col-m-12">
+    <p class="recipe-tag-style">{{recipe.tagLine}}</p>
+  </div>
+  <div class="col-m-12" style="display: flex;justify-content: center">
+    <p class="recipe-author-style">{{recipe.publisher}}</p>
+  </div>
+</div>
+<hr/>
+
+
+<div class="row recipe-details-ingredients-container">
+    <h2 class="h2-heading-style">Recipe Ingredients</h2>
+    <a class="add-ingredients-button" style="cursor:pointer" (click)="onAddToShoppingList()">+ Add Ingredients to Shopping List</a>
+
+  <div class="col-md-12">
+    <ul class="recipe-ingredients-listing-style">
+      <li class="recipe-ingredient-style" *ngFor="let ingredient of recipe.ingredients">
+        {{ingredient.amount}} {{ingredient.name}}
+      </li>
+    </ul>
+  </div>
+</div>
+<hr/>
+
+<div class="row recipe-directions dark-background">
+  <h2 class="h2-heading-style margin-30">How to cook it ?</h2>
+  <div class="col-xs-12">
+    <p class="recipe-direction-text">{{recipe.description }}</p>
+  </div>
+</div>
+

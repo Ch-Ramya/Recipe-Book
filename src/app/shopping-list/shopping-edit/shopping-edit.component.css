@@ -1,0 +1,29 @@
+.add-ingredient-btn{
+  text-transform: uppercase;
+  color: #054c05;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.del-ingredient-btn{
+  text-transform: uppercase;
+  color: #b41616;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.border-right{
+  cursor: none;
+  line-height: 10px;
+  color: rgb(97,85,81);
+}
+
+.clear-ingredient-btn{
+  text-transform: uppercase;
+  color: rgb(97,85,81);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}

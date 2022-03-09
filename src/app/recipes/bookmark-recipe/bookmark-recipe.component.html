@@ -1,0 +1,56 @@
+<div class="row" style="margin-top: 35px"  *ngFor="let recipeEle of bookmarkRecipes">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row" style="display:flex;justify-content: center;align-items: center;margin:10px">
+          <img [src]="recipeEle.imagePath" alt="{{recipeEle.name}}" class="" style="width: 100%; height: 350px"/>
+        </div>
+
+
+      </div>
+      <div class="col-md-8">
+        <div class="row" style="margin-top: 10px">
+          <div class="col-md-8">
+            <h2>{{recipeEle.name}}</h2>
+          </div>
+          <div class="col-md-4" style="display: flex;justify-content: flex-end;align-items: center;font-size: 12px;color: darkgreen;text-transform: uppercase;">
+            <a (click)="onNavigateToDetail(recipeEle.id)" style="cursor:pointer">more info</a>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-md-12">
+            <p>{{recipeEle.description}}</p>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <ul style="display: grid;grid-template-columns: repeat(4, 1fr);list-style-type: none;font-size:12px">
+            <li class="recipe-ingredient-style" *ngFor="let ingredient of recipeEle.ingredients">
+              {{ingredient.amount}} {{ingredient.name}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+</div>
+
+
+<!--<app-card-element *ngFor="let recipeEle of bookmarkRecipes"
+  cardCategory="recipeItem"
+  [cardDescription]="recipeEle.description"
+  [cardId]="recipeEle.id"
+  [cardImage]="recipeEle.imagePath"
+  [cardPublisher]=""
+  [cardTitle]="recipeEle.name"
+  imageDisplayStyle="square">
+  <div class="row additionalInfo">
+          <ul style="display: grid;grid-template-columns: repeat(4, 1fr);list-style-type: none;font-size:12px">
+            <li class="recipe-ingredient-style" *ngFor="let ingredient of recipeEle.ingredients">
+              {{ingredient.amount}} {{ingredient.name}}
+            </li>
+          </ul>
+        </div>
+</app-card-element>-->

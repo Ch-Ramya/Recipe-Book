@@ -1,0 +1,32 @@
+<a [routerLink]="[index]"
+   class="list-group-item clearfix recipe-item-container-style"
+   routerLinkActive="active"
+   style="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" style="display: flex;justify-content: center;align-items: center">
+          <span>
+            <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive recipe-item-image-icon">
+          </span>
+      </div>
+      <div class="col-md-8 justify-content-start" style="margin-top: 15px">
+        <div class="row">
+          <div class="col-md-8"><h4 class="list-group-item-heading recipe-name-style">{{recipe.name}}</h4></div>
+          <div class="col-md-4" style="display: flex;justify-content: flex-end;align-items: center"><p class="recipe-author-style">{{recipe.publisher}}</p></div>
+        </div>
+        <p class="list-group-item-text recipe-tag-style">{{recipe.tagLine}}</p>
+      </div>
+    </div>
+  </div>
+</a>
+
+<!--<app-card-element
+  cardCategory="recipeItem"
+  [cardDescription]="recipe.tagLine"
+  [cardId]="index"
+  [cardImage]="recipe.imagePath"
+  [cardPublisher]="recipe.publisher"
+  [cardTitle]="recipe.name"
+  imageDisplayStyle="round"
+  (onClick)="navigateToDetail($event)">
+</app-card-element>-->

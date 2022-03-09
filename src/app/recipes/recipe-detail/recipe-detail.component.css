@@ -1,0 +1,128 @@
+.recipe-detail-container-style{
+  background-color: #f9f5f3;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+.recipe-detail-image-style{
+  height: 320px;
+  width: 100%;
+}
+
+.recipe-title{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,30%) skewY(-6deg);
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  width: 50%;
+  line-height: 1.95;
+  text-align: center;
+}
+
+.recipe-title span{
+  padding: 1.3rem 2rem;
+  background-image: linear-gradient(to right bottom,#fbdb89,#f48982);
+}
+
+.margin-30{
+  margin: 40px 10px 30px 10px;
+}
+.border-right{
+  cursor: none;
+  line-height: 10px;
+  align-self: center;
+  color: rgb(97,85,81);
+}
+
+.recipe-control-links{
+  padding: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-decoration: none;
+  outline: none;
+  color: rgb(97,85,81);
+}
+
+.recipe-general-info-style{
+  color: rgb(97,85,81);
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.recipe-details-ingredients-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark-background{
+  background-color: #f2efee;
+}
+
+
+.h2-heading-style{
+  font-size: 20px;
+  font-weight: 500;
+  color: #f38e82;
+  text-transform: uppercase;
+  margin: 5px 0 5px 0;
+  text-align: center;
+}
+
+.add-ingredients-button{
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  margin: 5px 0 20px 0;
+  font-size: 13px;
+  color: rgb(97,85,81);
+  text-align: center;
+}
+
+.recipe-ingredients-listing-style{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  list-style: none;
+}
+
+.recipe-ingredient-style{
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.recipe-directions{
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-direction-text{
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #918581;
+}
+
+.recipe-tag-style, .recipe-author-style{
+  font-family: cursive;
+  text-align: center;
+}
+
+.recipe-tag-style{
+  margin-top: 30px;
+}
+
+.margin-30{
+  margin-top: 30px;
+}
